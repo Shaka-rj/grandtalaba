@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>GrandTalaba – OTM va Xorij Universitetlariga Hujjat Topshirish</title>
+
+        <meta
+            name="description"
+            content="GrandTalaba orqali O'zbekiston va xorij universitetlariga hujjat topshiring. Xususiy OTMlar, grantlar, konsultatsiya, viza va o'qishga kirish bo'yicha professional yordam." />
+
+        <meta
+            name="keywords"
+            content="GrandTalaba, OTM, universitet, xususiy OTM, grant, xorijda o'qish, hujjat topshirish, ta'lim" />
+
+        <meta name="author" content="GrandTalaba" />
+        <meta name="theme-color" content="#0B5ED7" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="GrandTalaba" />
+        <meta
+            property="og:description"
+            content="O'zbekiston va xorij universitetlariga hujjat topshirishda ishonchli yordam." />
+        <meta property="og:image" content="images/cover.jpg" />
+        <meta property="og:url" content="https://grandtalaba.uz" />
+
+        <link rel="icon" href="images/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="images/favicon.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="payment">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>GrandTalaba</h2>
+            <h2>To'lov</h2>
+            <p>Xizmat turini tanlang va xavfsiz to'lovni amalga oshiring.</p>
+        </div>
+
+        <form class="payment-form">
+
+            <label>To'lov provayderi</label>
+
+            <div class="providers">
+
+    <label class="provider">
+        <input type="radio" name="provider" checked>
+
+        <img src="icons/acharya-universiteti.png" alt="Click">
+
+        <span>Click</span>
+    </label>
+
+    <label class="provider">
+        <input type="radio" name="provider">
+
+        <img src="icons/al-xorazmiy-universiteti.png" alt="Payme">
+
+        <span>Payme</span>
+    </label>
+
+    <label class="provider">
+        <input type="radio" name="provider">
+
+        <img src="icons/alfraganus-universiteti.png" alt="Uzum Bank">
+
+        <span>Uzum Bank</span>
+    </label>
+
+</div>
+
+            <label>F.I.Sh.</label>
+
+            <input
+                type="text"
+                name="fullname"
+                placeholder="To'liq ismingiz">
+
+            <label>Telefon raqami</label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="+998 (__) ___-__-__">
+
+            <label>To'lov turi</label>
+
+            <select>
+
+                <option>Konsalting xizmati</option>
+
+                <option>Tur agentlik xizmati</option>
+
+            </select>
+            
+            <label>To'lov summasi</label>
+
+<div class="price-input">
+
+    <input
+        type="number"
+        id="amount"
+        name="amount"
+        min="1000"
+        step="1000"
+        placeholder="Masalan: 500000"
+        required>
+
+    <span>so'm</span>
+
+</div>
+
+<small class="hint">
+    Minimal to'lov summasi: <strong>1 000 so'm</strong>
+</small>
+
+            <button>
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                Davom etish
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+        <script>
+        const phone=document.getElementById("phone");
+
+phone.addEventListener("input",()=>{
+
+    const value=phone.value.replace(/\D/g,'');
+
+    if(value.length>12){
+
+        phone.value=phone.value.slice(0,-1);
+
+    }
+
+});
+        </script>
+    </body>
+</html>
